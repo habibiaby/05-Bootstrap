@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login - Ruang Baca</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #eee;
+            min-height: 100vh;
+        }
+
+        .gradient-custom-2 {
+            background: linear-gradient(
+                to right,
+                #4facfe,
+                #00c6ff,
+                #0072ff
+            );
+        }
+
+        .login-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .login-image {
+            width: 150px;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .btn-block {
+            width: 100%;
+        }
+
+        .welcome-panel {
+            min-height: 100%;
+        }
+
+        @media (max-width: 575.98px) {
+            .login-card {
+                border-radius: 12px;
+            }
+
+            .card-body {
+                padding: 1.5rem !important;
+            }
+
+            .welcome-panel {
+                min-height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                Ruang Baca
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bantuan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="gradient-form">
+        <div class="container py-4 py-md-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-10 col-lg-9">
+
+                    <div class="card login-card shadow">
+                        <div class="row g-0">
+
+                            <div class="col-12 col-lg-6">
+                                <div class="card-body p-4 p-md-5">
+
+                                    <div class="text-center mb-4">
+                                        <img
+                                            src="logoruangbuku.png"
+                                            class="login-image mb-3"
+                                            alt="Logo Ruang Baca">
+
+                                        <h4 class="fw-bold">
+                                            Ruang Baca
+                                        </h4>
+
+                                        <p class="text-muted">
+                                            Silakan masuk ke akun Anda
+                                        </p>
+                                    </div>
+
+                                    <form>
+                                        <div class="mb-3">
+                                            <label
+                                                for="username"
+                                                class="form-label">
+                                                Username
+                                            </label>
+
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="username"
+                                                placeholder="Masukkan username"
+                                                autocomplete="username"
+                                                required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label
+                                                for="password"
+                                                class="form-label">
+                                                Password
+                                            </label>
+
+                                            <input
+                                                type="password"
+                                                class="form-control"
+                                                id="password"
+                                                placeholder="Masukkan password"
+                                                autocomplete="current-password"
+                                                required>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap
+                                                    justify-content-between
+                                                    align-items-center gap-2 mb-4">
+
+                                            <div class="form-check">
+                                                <input
+                                                    class="form-check-input"
+                                                    type="checkbox"
+                                                    id="ingatSaya">
+
+                                                <label
+                                                    class="form-check-label"
+                                                    for="ingatSaya">
+                                                    Ingat saya
+                                                </label>
+                                            </div>
+
+                                            <a
+                                                href="#"
+                                                class="text-muted
+                                                       text-decoration-none small">
+                                                Lupa password?
+                                            </a>
+                                        </div>
+
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary btn-block mb-3">
+                                            Masuk
+                                        </button>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 d-flex
+                                        align-items-center
+                                        gradient-custom-2 welcome-panel">
+
+                                <div class="text-white p-4 p-md-5">
+                                    <h3 class="fw-bold mb-4">
+                                        Selamat Datang!
+                                    </h3>
+
+                                    <p class="mb-0">
+                                        Temukan berbagai sumber bacaan
+                                        dan perluas wawasanmu bersama
+                                        Ruang Baca. Mari mulai pengalaman
+                                        membaca yang menyenangkan.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
+```
